@@ -1,0 +1,10 @@
+
+
+
+/* -------------------------------- hero start ------------------------------ */
+.hero{
+    background-color: blue;
+    background-image: url('../images/hero-bg.png');
+    padding: 500px;
+}
+/* -------------------------------- hero end ------------------------------ */
