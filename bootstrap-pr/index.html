@@ -99,12 +99,12 @@
     <section class="about">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-lg order-lg-2">
+                <div class="col-12 col-lg-6 order-lg-2">
                     <div class="about-img position-relative">
                         <img src="asset/images/about.jpg" alt="" class="w-100 d-block border">
                     </div>
                 </div>
-                <div class="col-12 col-lg order-lg-1">
+                <div class="col-12 col-lg-6 order-lg-1">
                     <h2>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h2>
                     <p class="fst-italic">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                         incididunt ut labore et dolore magna aliqua.</p>
@@ -123,7 +123,73 @@
         </div>
     </section>
     <!-- about end -->
+
+    <!-- slider start -->
+    <section class="slider py-5">
+        <div class="container">
+            <h2 class="mb-5 text-warning">Organize Your Events in our Restaurant</h2>
+            <div class="carousel slide" id="myCarousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col">
+                                <img src="asset/images/slider/1.jpg" alt="" class="d-block w-100">
+                            </div>
+                            <div class="col"> 
+                                <h4>Birthday Parties</h4>
+                                <h3>$189</h3>
+                                <p class="fst-italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed voluptates at, consequuntur deleniti beatae illo odio.</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, assumenda?</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, veritatis.</p>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum, soluta?</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus tempore laudantium ab nobis natus fugiat excepturi illum est eligendi! Quibusdam?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col">
+                                <img src="asset/images/slider/2.jpg" alt="" class="d-block w-100">
+                            </div>
+                            <div class="col"> 
+                                <h4>Private Parties</h4>
+                                <h3>$290</h3>
+                                <p class="fst-italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed voluptates at, consequuntur deleniti beatae illo odio.</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, assumenda?</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, veritatis.</p>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum, soluta?</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus tempore laudantium ab nobis natus fugiat excepturi illum est eligendi! Quibusdam?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col">
+                                <img src="asset/images/slider/3.jpg" alt="" class="d-block w-100">
+                            </div>
+                            <div class="col"> 
+                                <h4>Custom Parties</h4>
+                                <h3>$99</h3>
+                                <p class="fst-italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed voluptates at, consequuntur deleniti beatae illo odio.</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, assumenda?</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, veritatis.</p>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum, soluta?</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus tempore laudantium ab nobis natus fugiat excepturi illum est eligendi! Quibusdam?</p>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+    <!-- slider end -->
     <script src="asset/js/bootstrap.bundle.min.js"></script>
+    <script>
+        var myCarousel = document.querySelector('#myCarousel')
+        var carousel = new bootstrap.Carousel(myCarousel, {
+            interval: 3000,
+            wrap: true
+        })
+    </script>
 </body>
 
 </html>

@@ -113,3 +113,11 @@ nav{
     scale: 1.05;
 }
 /* ----------------------- about end ------------------------ */
+
+/* ----------------------- slider start ------------------------ */
+.slider{
+    background-image: url('../images/slider/slide-bg.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+}
+/* ----------------------- slider end ------------------------ */
