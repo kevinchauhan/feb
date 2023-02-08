@@ -7,12 +7,31 @@
 
 :root{
     --bs-warning-rgb: 205,164,94;
+    --bs-warning: #cda45e;
 }
-
+.bg-warning{
+    background-color: rgb(var(--bs-warning-rgb)) !important;
+}
+.text-warning{
+    color: rgb(var(--bs-warning-rgb)) !important;
+}
+.ptb-100{
+    padding: 100px 0;
+}
 /* ----------------------- header start ------------------------ */
+.top-header{
+    z-index: 2;
+}
 nav{
     background-color: rgba(0, 0, 0, 0.5);
     top: 40px !important;
+}
+.btn-outline-warning{
+    border-color: rgb(var(--bs-warning-rgb));
+}
+.btn-outline-warning:hover{
+    border-color: rgb(var(--bs-warning-rgb));
+    background-color: rgb(var(--bs-warning-rgb));
 }
 /* ----------------------- header end ------------------------ */
 
@@ -70,7 +89,8 @@ nav{
     background-size: cover;
     background-repeat: no-repeat;
     z-index: 1;
-    padding: 100px 0;
+    position: relative;
+    z-index: 1;
 }
 .about-item li::before{
     content: "\f058";
@@ -115,9 +135,50 @@ nav{
 /* ----------------------- about end ------------------------ */
 
 /* ----------------------- slider start ------------------------ */
+.subtitle::after{
+    content: "";
+    width: 100px;
+    height: 1px;
+    background-color: rgb(255, 255, 255,0.2);
+    position: absolute;
+    top: 49%;
+    left: 120%;
+}
 .slider{
     background-image: url('../images/slider/slide-bg.jpg');
     background-attachment: fixed;
     background-size: cover;
+    position: relative;
+    z-index: 1;
 }
+.slider::before,.about::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: -1;
+}
+.carousel-indicators{
+    bottom: -70px;
+}
+.carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+.carousel-indicators .active {
+    background-color: var(--bs-warning);
+  }
 /* ----------------------- slider end ------------------------ */
+
+/* ----------------------- services start ------------------------ */
+.services{
+    background-color: #0c0b09;
+}
+.card{
+    background-color: #1a1814;
+}
+/* ----------------------- services end ------------------------ */
