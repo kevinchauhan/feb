@@ -182,3 +182,15 @@ nav{
     background-color: #1a1814;
 }
 /* ----------------------- services end ------------------------ */
+
+.form{
+    background-color: #0c0b09;
+}
+.form-floating input{
+    background: transparent;
+    border-color: rgb(var(--bs-warning-rgb),0.3);
+}
+label, textarea{
+    background: transparent !important;
+    color: rgb(var(--bs-warning-rgb),0.3);
+}
