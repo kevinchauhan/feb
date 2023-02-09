@@ -21,9 +21,16 @@
 /* ----------------------- header start ------------------------ */
 .top-header{
     z-index: 2;
+    transition: all .5s;
+}
+ .sticky{
+    border-bottom: 1px solid #37332a;
+    background-color: rgb(0, 0, 0, 0.9);
+    top: 0 !important;
 }
 nav{
-    background-color: rgba(0, 0, 0, 0.5);
+    transition: all .5s;
+    background-color: rgb(0, 0, 0, 0.5);
     top: 40px !important;
 }
 .btn-outline-warning{
@@ -180,6 +187,15 @@ nav{
 }
 .card{
     background-color: #1a1814;
+    transition: all .5s linear;
+}
+.card:hover span{
+    color: #fff !important;
+}
+.card:hover {
+    padding-top: 0.5rem !important;
+    padding-bottom: 2.5rem !important;
+    background-color: rgb(var(--bs-warning-rgb));
 }
 /* ----------------------- services end ------------------------ */
 
@@ -193,4 +209,11 @@ nav{
 label, textarea{
     background: transparent !important;
     color: rgb(var(--bs-warning-rgb),0.3);
+}
+.btn-warning{
+    background-color: rgb(var(--bs-warning-rgb));
+}
+.btn-warning:hover{
+    border-color: rgb(var(--bs-warning-rgb));
+    background-color: rgb(var(--bs-warning-rgb));
 }
