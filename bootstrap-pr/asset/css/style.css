@@ -234,3 +234,29 @@ textarea{
     line-height: 48px;
 }
 /* ----------------------- contact end ------------------------ */
+
+/* ----------------------- gallery start ------------------------ */
+.modal-dialog{
+    max-width: 700px;
+    margin-top: -20px;
+}
+.modal-content{
+    background: transparent;
+}
+.modal-header{
+    border: none;
+}
+.modal .text-end button:focus{
+    box-shadow: none;
+}
+.open{
+    overflow: hidden;
+    display: block;
+}
+.open img{
+    transition: all .4s;
+}
+.open:hover img{
+    scale: 1.1;
+}
+/* ----------------------- gallery end ------------------------ */

@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="asset/css/style.css">
 </head>
 
-<body style="height: 200vh;">
+<body>
     <!-- scroll-top start -->
     <div class="scroll-top btn position-fixed bottom-0 end-0">up</div>
     <!-- scroll-top end -->
@@ -128,8 +128,8 @@
     </section>
     <!-- about end -->
 
-      <!-- services start -->
-      <section class="services ptb-100">
+    <!-- services start -->
+    <section class="services ptb-100">
         <div class="container">
             <div class="title">
                 <h6 class="subtitle text-uppercase position-relative d-inline-block">Why Us</h6>
@@ -322,11 +322,12 @@
                                 <div class="form-floating">
                                     <textarea name="" id="" class="form-control" placeholder="Message"
                                         rows="7"></textarea>
-                                        <label for="name" class="">Message</label>
+                                    <label for="name" class="">Message</label>
                                 </div>
                             </div>
                             <div class="text-center">
-                                <button class="btn border-0 btn-warning text-light rounded-pill px-4 py-2">Send Message</button>
+                                <button class="btn border-0 btn-warning text-light rounded-pill px-4 py-2">Send
+                                    Message</button>
                             </div>
                         </div>
                     </div>
@@ -335,6 +336,69 @@
         </div>
     </section>
     <!-- contact end -->
+
+    <!-- gallery start -->
+    <section class="ptb-100 bg-dark">
+        <div class="container-fluid">
+            <div class="row px-2">
+                <div class="col-3 p-1">
+                    <a type="button" class="open" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        <img src="asset/images/gallery/gallery-1.jpg" width="100%" />
+                    </a>
+                </div>
+                <div class="col-3 p-1">
+                    <a type="button" class="open" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        <img src="asset/images/gallery/gallery-2.jpg" width="100%" />
+                    </a>
+                </div>
+                <div class="col-3 p-1">
+                    <a type="button" class="open" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        <img src="asset/images/gallery/gallery-3.jpg" width="100%" />
+                    </a>
+                </div>
+                <div class="col-3 p-1">
+                    <a type="button" class="open" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        <img src="asset/images/gallery/gallery-4.jpg" width="100%" />
+                    </a>
+                </div>
+                <div class="col-3 p-1">
+                    <a type="button" class="open" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        <img src="asset/images/gallery/gallery-5.jpg" width="100%" />
+                    </a>
+                </div>
+                <div class="col-3 p-1">
+                    <a type="button" class="open" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        <img src="asset/images/gallery/gallery-6.jpg" width="100%" />
+                    </a>
+                </div>
+                <div class="col-3 p-1">
+                    <a type="button" class="open" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        <img src="asset/images/gallery/gallery-7.jpg" width="100%" />
+                    </a>
+                </div>
+                <div class="col-3 p-1">
+                    <a type="button" class="open" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        <img src="asset/images/gallery/gallery-8.jpg" width="100%" />
+                    </a>
+                </div>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="text-end">
+                    <button type="button" class="text-light pt-3 pe-5 fs-4 btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- gallery end -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="asset/js/bootstrap.bundle.min.js"></script>
@@ -345,16 +409,27 @@
             wrap: true
         })
 
-        // header
-        $(window).scroll(function () {
-            if (scrollY > 400) {
-                $("nav").addClass("sticky");
-                $(".top-header").css({ "transform": "translateY(-100%)" })
-            } else {
-                $(".top-header").css({ "transform": "translateY(0%)" })
-                $("nav").removeClass("sticky");
-            }
-        })
+        $(document).ready(function () {
+
+            // header
+            $(window).scroll(function () {
+                if (scrollY > 400) {
+                    $("nav").addClass("sticky");
+                    $(".top-header").css({ "transform": "translateY(-100%)" });
+                } else {
+                    $(".top-header").css({ "transform": "translateY(0%)" });
+                    $("nav").removeClass("sticky");
+                }
+            });
+
+            // gallery
+            $('.open').click(function () {
+                $(".modal-body").html("");
+                var a = $(this).html();
+                $(".modal-body").append(a);
+            });
+        });
+
     </script>
 </body>
 
