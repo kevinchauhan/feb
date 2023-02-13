@@ -6,18 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- title -->
-    <title>Document</title>
+    <title>Restaurantly By Kevin</title>
+    <!-- favicon -->
+    <link rel="icon" href="asset/images/favicon.svg">
     <!-- font-awesome -->
     <link rel="stylesheet" href="asset/fonts/font-awesome/all.min.css">
     <!-- bootstrap-5.0.2 css -->
     <link rel="stylesheet" href="asset/css/bootstrap-5.0.2/bootstrap.min.css">
     <!-- css -->
     <link rel="stylesheet" href="asset/css/style.css">
+    <script>
+
+    </script>
 </head>
 
 <body>
     <!-- scroll-top start -->
-    <div class="scroll-top btn position-fixed bottom-0 end-0">up</div>
+    <a href="#top" class="scroll-top text-center position-fixed rounded-circle"><i class="fa-solid fa-arrow-up"></i></a>
     <!-- scroll-top end -->
 
     <!-- top-header start -->
@@ -48,18 +53,17 @@
             <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <div class="mx-auto"></div>
+            <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a href="#" class="nav-link active">Home</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Menu</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Special</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Events</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Chefs</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Gallery</a></li>
-                    <li class="nav-item dropdown"><a href="#" class="nav-link dropdown-toggle" id="navbarDropdown"
-                            data-bs-toggle="dropdown">Drop Down</a>
+                    <li class="nav-item"><a href="#" class="nav-link text-light active">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link text-light">About</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-light">Menu</a></li>
+                    <li class="nav-item"><a href="#special" class="nav-link text-light">Special</a></li>
+                    <li class="nav-item"><a href="#events" class="nav-link text-light">Events</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-light">Chefs</a></li>
+                    <li class="nav-item"><a href="#gallery" class="nav-link text-light">Gallery</a></li>
+                    <li class="nav-item dropdown"><a href="#" class="nav-link text-light dropdown-toggle"
+                            id="navbarDropdown" data-bs-toggle="dropdown">Drop Down</a>
                         <ul class="dropdown-menu">
                             <li><a href="#" class="dropdown-item">Drop 1</a></li>
                             <li><a href="#" class="dropdown-item">Drop 2</a></li>
@@ -68,9 +72,8 @@
                             <li><a href="#" class="dropdown-item">Drop 5</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link text-light">Contact</a></li>
                 </ul>
-                <div class="mx-auto"></div>
             </div>
             <button class="d-none d-lg-block btn btn-outline-warning rounded-pill px-4 text-light">BOOK A TABLE</button>
         </div>
@@ -78,7 +81,7 @@
     <!-- header end -->
 
     <!-- hero start -->
-    <section class="hero vh-100 d-flex align-content-center flex-wrap position-relative">
+    <section class="hero vh-100 d-flex align-content-center flex-wrap position-relative" id="top">
         <div class="container">
             <div class="row">
                 <div class="col-8">
@@ -100,7 +103,7 @@
     <!-- hero end -->
 
     <!-- about start -->
-    <section class="about ptb-100">
+    <section class="about ptb-100" id="about">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-6 order-lg-2">
@@ -172,7 +175,7 @@
     <!-- services end -->
 
     <!-- slider start -->
-    <section class="slider ptb-100">
+    <section class="slider ptb-100" id="events">
         <div class="container">
             <div class="title">
                 <h6 class="subtitle text-uppercase position-relative d-inline-block">Events</h6>
@@ -260,41 +263,41 @@
             <form action="">
                 <div class="row">
                     <div class="col-4">
-                        <div class="contact-item d-flex">
+                        <div class="contact-item d-flex mb-3">
                             <span class="bg-warning rounded-circle text-center">
                                 <i class="fa-solid fa-location-dot fs-5"></i>
                             </span>
                             <div class="ps-3">
                                 <h5 class="mb-1">Location</h5>
-                                <p class="text-muted">A108 Adam Street, New York, <br> NY 535022</p>
+                                <p>A108 Adam Street, New York, <br> NY 535022</p>
                             </div>
                         </div>
-                        <div class="contact-item d-flex">
+                        <div class="contact-item d-flex mb-3">
                             <span class="bg-warning rounded-circle text-center">
                                 <i class="fa-regular fa-clock fs-5"></i>
                             </span>
                             <div class="ps-3">
                                 <h5 class="mb-1">Open Hours:</h5>
-                                <p class="text-muted">Monday-Saturday: <br>
+                                <p>Monday-Saturday: <br>
                                     11:00 AM - 2300 PM</p>
                             </div>
                         </div>
-                        <div class="contact-item d-flex">
+                        <div class="contact-item d-flex mb-3">
                             <span class="bg-warning rounded-circle text-center">
                                 <i class="fa-regular fa-envelope fs-5"></i>
                             </span>
                             <div class="ps-3">
                                 <h5 class="mb-1">Email:</h5>
-                                <p class="text-muted">info@example.com</p>
+                                <p>info@example.com</p>
                             </div>
                         </div>
-                        <div class="contact-item d-flex">
+                        <div class="contact-item d-flex mb-3">
                             <span class="bg-warning rounded-circle text-center">
                                 <i class="fa-solid fa-mobile-screen-button fs-5"></i>
                             </span>
                             <div class="ps-3">
                                 <h5 class="mb-1">Call:</h5>
-                                <p class="text-muted">+911234567891</p>
+                                <p>+911234567891</p>
                             </div>
                         </div>
                     </div>
@@ -302,27 +305,28 @@
                         <div class="row">
                             <div class="col-6 mb-3">
                                 <div class="form-floating">
-                                    <input type="text" id="name" class="form-control" placeholder="Your Name">
-                                    <label for="name" class="">Your Name</label>
+                                    <input type="text" id="name" class="form-control" placeholder="Your Name"
+                                        data-bs-toggle="tooltip" data-bs-placement="top" title="Please enter your name">
+                                    <label>Your Name</label>
                                 </div>
                             </div>
                             <div class="col-6 mb-3">
                                 <div class="form-floating">
-                                    <input type="email" id="name" class="form-control" placeholder="Your Email">
-                                    <label for="name" class="">Your Email</label>
+                                    <input type="email" id="email" class="form-control" placeholder="Your Email">
+                                    <label>Your Email</label>
                                 </div>
                             </div>
                             <div class="col-12 mb-3">
                                 <div class="form-floating">
-                                    <input type="text" id="name" class="form-control" placeholder="subject">
-                                    <label for="name" class="">Subject</label>
+                                    <input type="text" id="subject" class="form-control" placeholder="subject">
+                                    <label>Subject</label>
                                 </div>
                             </div>
                             <div class="col-12 mb-3">
                                 <div class="form-floating">
-                                    <textarea name="" id="" class="form-control" placeholder="Message"
-                                        rows="7"></textarea>
-                                    <label for="name" class="">Message</label>
+                                    <textarea name="m" id="message" class="form-control"
+                                        placeholder="Message"></textarea>
+                                    <label>Message</label>
                                 </div>
                             </div>
                             <div class="text-center">
@@ -338,7 +342,7 @@
     <!-- contact end -->
 
     <!-- gallery start -->
-    <section class="ptb-40 bg-dark">
+    <section class="gallery ptb-40" id="gallery">
         <div class="container">
             <div class="title">
                 <h6 class="subtitle text-uppercase position-relative d-inline-block">GALLERY</h6>
@@ -406,60 +410,174 @@
     </section>
     <!-- gallery end -->
 
+    <!-- list-group start -->
+    <section class="list-gp ptb-40" id="special">
+        <div class="container">
+            <div class="title">
+                <h6 class="subtitle text-uppercase position-relative d-inline-block">SPECIALS</h6>
+                <h2 class="mb-5 text-warning">Check Our Specials</h2>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <div class="list-group rounded-0" id="list-tab" role="tablist">
+                        <a class="list-group-item list-group-item-action active" id="list-1" data-bs-toggle="list"
+                            href="#list1" role="tab" aria-controls="list-home">Modi sit est</a>
+                        <a class="list-group-item list-group-item-action" id="list-2" data-bs-toggle="list"
+                            href="#list2" role="tab" aria-controls="list-profile">Unde praesentium sed</a>
+                        <a class="list-group-item list-group-item-action" id="list-3" data-bs-toggle="list"
+                            href="#list3" role="tab" aria-controls="list-messages">Pariatur explicabo vel</a>
+                        <a class="list-group-item list-group-item-action" id="list-4" data-bs-toggle="list"
+                            href="#list4" role="tab" aria-controls="list-settings">Nostrum qui quasi</a>
+                        <a class="list-group-item list-group-item-action" id="list-5" data-bs-toggle="list"
+                            href="#list5" role="tab" aria-controls="list-settings">Iusto ut expedita aut</a>
+                    </div>
+                </div>
+                <div class="col-9">
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="list1" role="tabpanel"
+                            aria-labelledby="list-home-list">
+                            <div class="row">
+                                <div class="col-8">
+                                    <h3>Architecto ut aperiam autem id</h3>
+                                    <p>Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a
+                                        videna mareta paulona marka</p>
+                                    <p>Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. Laborum
+                                        eos ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. Est repellat
+                                        minima eveniet eius et quis magni nihil. Consequatur dolorem quaerat quos qui
+                                        similique accusamus nostrum rem vero</p>
+                                </div>
+                                <div class="col-4">
+                                    <img src="asset/images/list-group/specials-1.png" alt="" class="w-100">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="list2" role="tabpanel" aria-labelledby="list-profile-list">
+                            <div class="row">
+                                <div class="col-8">
+                                    <h3>Et blanditiis nemo veritatis excepturi</h3>
+                                    <p>Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a
+                                        videna mareta paulona marka</p>
+                                    <p>Ea ipsum voluptatem consequatur quis est. Illum error ullam omnis quia et
+                                        reiciendis sunt sunt est. Non aliquid repellendus itaque accusamus eius et velit
+                                        ipsa voluptates. Optio nesciunt eaque beatae accusamus lerode pakto madirna
+                                        desera vafle de nideran pal</p>
+                                </div>
+                                <div class="col-4">
+                                    <img src="asset/images/list-group/specials-2.png" alt="" class="w-100">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="list3" role="tabpanel" aria-labelledby="list-messages-list">
+                            <div class="row">
+                                <div class="col-8">
+                                    <h3>Impedit facilis occaecati odio neque aperiam sit</h3>
+                                    <p>Eos voluptatibus quo. Odio similique illum id quidem non enim fuga. Qui natus non
+                                        sunt dicta dolor et. In asperiores velit quaerat perferendis aut</p>
+                                    <p>Iure officiis odit rerum. Harum sequi eum illum corrupti culpa veritatis
+                                        quisquam. Neque necessitatibus illo rerum eum ut. Commodi ipsam minima molestiae
+                                        sed laboriosam a iste odio. Earum odit nesciunt fugiat sit ullam. Soluta et
+                                        harum voluptatem optio quae</p>
+                                </div>
+                                <div class="col-4">
+                                    <img src="asset/images/list-group/specials-3.png" alt="" class="w-100">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="list4" role="tabpanel" aria-labelledby="list-settings-list">
+                            <div class="row">
+                                <div class="col-8">
+                                    <h3>Fuga dolores inventore laboriosam ut est accusamus laboriosam dolore</h3>
+                                    <p>Totam aperiam accusamus. Repellat consequuntur iure voluptas iure porro quis
+                                        delectus</p>
+                                    <p>Eaque consequuntur consequuntur libero expedita in voluptas. Nostrum ipsam
+                                        necessitatibus aliquam fugiat debitis quis velit. Eum ex maxime error in
+                                        consequatur corporis atque. Eligendi asperiores sed qui veritatis aperiam quia a
+                                        laborum inventore</p>
+                                </div>
+                                <div class="col-4">
+                                    <img src="asset/images/list-group/specials-4.png" alt="" class="w-100">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="list5" role="tabpanel" aria-labelledby="list-settings-list">
+                            <div class="row">
+                                <div class="col-8">
+                                    <h3>Est eveniet ipsam sindera pad rone matrelat sando reda</h3>
+                                    <p>Omnis blanditiis saepe eos autem qui sunt debitis porro quia.</p>
+                                    <p>Exercitationem nostrum omnis. Ut reiciendis repudiandae minus. Omnis recusandae
+                                        ut non quam ut quod eius qui. Ipsum quia odit vero atque qui quibusdam amet.
+                                        Occaecati sed est sint aut vitae molestiae voluptate vel</p>
+                                </div>
+                                <div class="col-4">
+                                    <img src="asset/images/list-group/specials-5.png" alt="" class="w-100">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- list-group end -->
+
     <!-- faq start -->
-    <section class="bg-dark ptb-40">
+    <section class="faq ptb-40">
         <div class="container">
             <div class="title">
                 <h6 class="subtitle text-uppercase position-relative d-inline-block">FAQ</h6>
-                <h2 class="mb-5 text-warning">Some photos from Our Restaurant</h2>
+                <h2 class="mb-5 text-warning">Questions we've asked</h2>
             </div>
             <div class="accordion accordion-flush" id="faq">
                 <div class="accordion-item">
                     <div class="accordion-header">
                         <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse"
-                            data-bs-target="#answer1">Question 1
+                            data-bs-target="#answer1">What types of food do you serve?
                         </button>
                     </div>
                     <div class="accordion-collapse collapse" id="answer1" data-bs-parent="#faq">
                         <div class="accordion-body">
-                            <p class="text-dark mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt,
-                                distinctio.</p>
+                            <p class="text-dark mb-0">We serve a variety of cuisines, including Italian, American,
+                                Chinese, and Mexican. Our menu offers a wide range of dishes to suit different tastes
+                                and dietary requirements.</p>
                         </div>
                     </div>
                 </div>
                 <div class="accordion-item">
                     <div class="accordion-header">
                         <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse"
-                            data-bs-target="#answer2">Question 1</button>
+                            data-bs-target="#answer2">What are your hours of operation?</button>
                     </div>
                     <div class="accordion-collapse collapse" id="answer2" data-bs-parent="#faq">
                         <div class="accordion-body">
-                            <p class="text-dark mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt,
-                                distinctio.</p>
+                            <p class="text-dark mb-0">We are open from 11:00 am to 10:00 pm Monday through Friday, and
+                                from 10:00 am to 11:00 pm on weekends. Please note that our hours may vary on holidays
+                                and special occasions.</p>
                         </div>
                     </div>
                 </div>
                 <div class="accordion-item">
                     <div class="accordion-header">
                         <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse"
-                            data-bs-target="#answer3">Question 1</button>
+                            data-bs-target="#answer3">Do you take reservations?</button>
                     </div>
                     <div class="accordion-collapse collapse" id="answer3" data-bs-parent="#faq">
                         <div class="accordion-body">
-                            <p class="text-dark mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt,
-                                distinctio.</p>
+                            <p class="text-dark mb-0">Yes, we do take reservations. You can make a reservation online
+                                through our website or by calling our restaurant directly. We recommend making a
+                                reservation in advance, especially for larger groups.</p>
                         </div>
                     </div>
                 </div>
                 <div class="accordion-item">
                     <div class="accordion-header">
                         <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse"
-                            data-bs-target="#answer4">Question 1</button>
+                            data-bs-target="#answer4">Do you offer takeout or delivery?</button>
                     </div>
                     <div class="accordion-collapse collapse" id="answer4" data-bs-parent="#faq">
                         <div class="accordion-body">
-                            <p class="text-dark mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt,
-                                distinctio.</p>
+                            <p class="text-dark mb-0">Yes, we offer both takeout and delivery services. You can place
+                                your order online or by phone and we'll have your food ready for pickup or delivery
+                                within the estimated time.</p>
                         </div>
                     </div>
                 </div>
@@ -468,6 +586,80 @@
     </section>
     <!-- faq end -->
 
+    <!-- footer start -->
+    <footer>
+        <div class="top-footer ptb-40">
+            <div class="container">
+                <div class="row">
+                    <div class="col-3">
+                        <h3>RESTAURANTLY</h3>
+                        <p>A108 Adam Street NY 535022, USA</p>
+                        <p>Phone: +1 5589 55488 55</p>
+                        <p>Email: info@example.com</p>
+                        <ul class="social-link p-0 d-flex gap-2">
+                            <li class="list-unstyled text-center"><a href="#" class="rounded-circle d-block"><i
+                                        class="fa-brands fa-twitter"></i></a></li>
+                            <li class="list-unstyled text-center"><a href="#" class="rounded-circle d-block"><i
+                                        class="fa-brands fa-facebook-f"></i></a></li>
+                            <li class="list-unstyled text-center"><a href="#" class="rounded-circle d-block"><i
+                                        class="fa-brands fa-instagram"></i></a></li>
+                            <li class="list-unstyled text-center"><a href="#" class="rounded-circle d-block"><i
+                                        class="fa-brands fa-skype"></i></a></li>
+                            <li class="list-unstyled text-center"><a href="#" class="rounded-circle d-block"><i
+                                        class="fa-brands fa-linkedin-in"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-3">
+                        <h4>Useful Links</h4>
+                        <ul class="foot-item">
+                            <li class="list-unstyled mb-2"><a href="#" class="text-light text-decoration-none">Home</a>
+                            </li>
+                            <li class="list-unstyled mb-2"><a href="#" class="text-light text-decoration-none">About
+                                    Us</a></li>
+                            <li class="list-unstyled mb-2"><a href="#"
+                                    class="text-light text-decoration-none">Services</a></li>
+                            <li class="list-unstyled mb-2"><a href="#" class="text-light text-decoration-none">Terms of
+                                    Service</a></li>
+                            <li class="list-unstyled mb-2"><a href="#" class="text-light text-decoration-none">Privacy
+                                    Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-3">
+                        <h4>Our Services</h4>
+                        <ul class="foot-item">
+                            <li class="list-unstyled mb-2"><a href="#" class="text-light text-decoration-none">We
+                                    Design</a></li>
+                            <li class="list-unstyled mb-2"><a href="#" class="text-light text-decoration-none">Web
+                                    Development</a></li>
+                            <li class="list-unstyled mb-2"><a href="#" class="text-light text-decoration-none">Product
+                                    Management</a></li>
+                            <li class="list-unstyled mb-2"><a href="#"
+                                    class="text-light text-decoration-none">Marketing</a></li>
+                            <li class="list-unstyled mb-2"><a href="#" class="text-light text-decoration-none">Graphic
+                                    Design</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-3">
+                        <h4>Our Newsletter</h4>
+                        <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+                        <div class="position-relative">
+                            <form action="">
+                                <input type="email" name="" id="" class="form-control">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-footer ptb-40">
+            <div class="container text-center">
+                <h5>© Copyright Restaurantly. All Rights Reserved</h5>
+                <h6>Designed by Kevin</h6>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+
     <script src="asset/js/jquery.min.js"></script>
     <script src="asset/js/bootstrap.bundle.min.js"></script>
     <script>
@@ -475,18 +667,19 @@
         var carousel = new bootstrap.Carousel(myCarousel, {
             interval: 3000,
             wrap: true
-        })
+        });
 
         $(document).ready(function () {
-
             // header
             $(window).scroll(function () {
                 if (scrollY > 400) {
                     $("nav").addClass("sticky");
                     $(".top-header").css({ "transform": "translateY(-100%)" });
+                    $(".scroll-top").fadeIn(1000);
                 } else {
                     $(".top-header").css({ "transform": "translateY(0%)" });
                     $("nav").removeClass("sticky");
+                    $(".scroll-top").fadeOut(1000);
                 }
             });
 

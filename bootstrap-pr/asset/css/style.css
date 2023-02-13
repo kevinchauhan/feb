@@ -11,6 +11,9 @@
 .bg-warning{
     background-color: rgb(var(--bs-warning-rgb)) !important;
 }
+.bg-transparent{
+    background: transparent !important;
+}
 .text-warning{
     color: rgb(var(--bs-warning-rgb)) !important;
 }
@@ -20,6 +23,28 @@
 .ptb-100{
     padding: 100px 0;
 }
+/* ----------------------- scroll-top start ------------------------ */
+.scroll-top{
+    width: 45px;
+    height: 45px;
+    line-height: 40px;
+    right: 15px;
+    bottom: 20px;
+    border: 2px solid rgb(var(--bs-warning-rgb));
+    z-index: 99;
+    display: none;
+}
+.scroll-top i{
+    color: rgb(var(--bs-warning-rgb));
+}
+.scroll-top:hover{
+    background-color: rgb(var(--bs-warning-rgb));
+}
+.scroll-top:hover i{
+    color: #fff;
+}
+/* ----------------------- scroll-top end ------------------------ */
+
 /* ----------------------- header start ------------------------ */
 .top-header{
     z-index: 2;
@@ -34,6 +59,12 @@ nav{
     transition: all .5s;
     background-color: rgb(0, 0, 0, 0.5);
     top: 40px !important;
+}
+.nav-link.active{
+    color: rgb(var(--bs-warning-rgb)) !important;
+}
+.nav-link:hover{
+    color: rgb(var(--bs-warning-rgb)) !important;
 }
 .btn-outline-warning{
     border-color: rgb(var(--bs-warning-rgb));
@@ -207,15 +238,15 @@ nav{
 }
 .form-floating input{
     background: transparent;
-    border-color: rgb(var(--bs-warning-rgb),0.4);
+    border-color: #625b4b;
 }
 label,textarea{
     background: transparent !important;
-    color: rgb(var(--bs-warning-rgb),0.4) !important;
+    color: #625b4b !important;
 }
 textarea{
-    border-color: rgb(var(--bs-warning-rgb),0.4) !important;
-    height: 150px !important;
+    border-color: #625b4b !important;
+    height: 180px !important;
 }
 .form-control:focus, textarea:focus{
     background: transparent !important;
@@ -235,9 +266,16 @@ textarea{
     height: 45px;
     line-height: 48px;
 }
+.contact-item p{
+    color: #bab3a6 !important;
+    font-size: 14px;
+}
 /* ----------------------- contact end ------------------------ */
 
 /* ----------------------- gallery start ------------------------ */
+.gallery{
+    background-color: #37332a;
+}
 .modal-dialog{
     max-width: 700px;
     margin-top: -20px;
@@ -262,3 +300,63 @@ textarea{
     scale: 1.1;
 }
 /* ----------------------- gallery end ------------------------ */
+
+/* ----------------------- list-group start ------------------------ */
+.list-gp{
+    background-color: #0c0b09;
+}
+.list-group{
+    border-right: 2px solid rgb(var(--bs-warning-rgb));
+}
+.list-group-item{
+    background: transparent;
+    color: #fff;
+    font-weight: 500;
+}
+.list-group-item:hover{
+    background: transparent;
+    color: rgb(var(--bs-warning-rgb));
+}
+.list-group-item.active{
+    border: none;
+    background-color: rgb(var(--bs-warning-rgb));
+    color: #1a1814;
+}
+/* ----------------------- list-group end ------------------------ */
+
+/* ----------------------- faq start ------------------------ */
+.faq{
+    background-color: #1a1814;
+}
+.accordion-button{
+    background-color: #a18046 !important;
+    color: #fff;
+    border-radius: 0 !important;
+}
+.accordion-button:hover{
+    background-color: #bb9451 !important;
+}
+.accordion-button:focus{
+    box-shadow: none;
+    color: #fff;
+}
+/* ----------------------- faq end ------------------------ */
+
+/* ----------------------- footer start ------------------------ */
+.top-footer{
+    background-color: #0c0b09;
+}
+.social-link li a{
+    background-color: #37332a;
+    width: 35px;
+    height: 35px;
+    line-height: 33px;
+    transition: all .4s;
+}
+.social-link li a:hover{
+    background-color: rgb(var(--bs-warning-rgb));
+}
+.bottom-footer{
+    background-color: #000;
+}
+/* ----------------------- footer end ------------------------ */
