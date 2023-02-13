@@ -338,7 +338,13 @@
     <!-- contact end -->
 
     <!-- gallery start -->
-    <section class="ptb-100 bg-dark">
+    <section class="ptb-40 bg-dark">
+        <div class="container">
+            <div class="title">
+                <h6 class="subtitle text-uppercase position-relative d-inline-block">GALLERY</h6>
+                <h2 class="mb-5 text-warning">Some photos from Our Restaurant</h2>
+            </div>
+        </div>
         <div class="container-fluid">
             <div class="row px-2">
                 <div class="col-3 p-1">
@@ -386,8 +392,8 @@
             <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
                 aria-labelledby="staticBackdropLabel" aria-hidden="true">
                 <div class="text-end">
-                    <button type="button" class="text-light pt-3 pe-5 fs-4 btn-close btn-close-white" data-bs-dismiss="modal"
-                        aria-label="Close"></button>
+                    <button type="button" class="text-light pt-3 pe-5 fs-4 btn-close btn-close-white"
+                        data-bs-dismiss="modal"></button>
                 </div>
                 <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
@@ -400,7 +406,69 @@
     </section>
     <!-- gallery end -->
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <!-- faq start -->
+    <section class="bg-dark ptb-40">
+        <div class="container">
+            <div class="title">
+                <h6 class="subtitle text-uppercase position-relative d-inline-block">FAQ</h6>
+                <h2 class="mb-5 text-warning">Some photos from Our Restaurant</h2>
+            </div>
+            <div class="accordion accordion-flush" id="faq">
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse"
+                            data-bs-target="#answer1">Question 1
+                        </button>
+                    </div>
+                    <div class="accordion-collapse collapse" id="answer1" data-bs-parent="#faq">
+                        <div class="accordion-body">
+                            <p class="text-dark mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt,
+                                distinctio.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse"
+                            data-bs-target="#answer2">Question 1</button>
+                    </div>
+                    <div class="accordion-collapse collapse" id="answer2" data-bs-parent="#faq">
+                        <div class="accordion-body">
+                            <p class="text-dark mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt,
+                                distinctio.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse"
+                            data-bs-target="#answer3">Question 1</button>
+                    </div>
+                    <div class="accordion-collapse collapse" id="answer3" data-bs-parent="#faq">
+                        <div class="accordion-body">
+                            <p class="text-dark mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt,
+                                distinctio.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse"
+                            data-bs-target="#answer4">Question 1</button>
+                    </div>
+                    <div class="accordion-collapse collapse" id="answer4" data-bs-parent="#faq">
+                        <div class="accordion-body">
+                            <p class="text-dark mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt,
+                                distinctio.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- faq end -->
+
+    <script src="asset/js/jquery.min.js"></script>
     <script src="asset/js/bootstrap.bundle.min.js"></script>
     <script>
         var myCarousel = document.querySelector('#myCarousel')
