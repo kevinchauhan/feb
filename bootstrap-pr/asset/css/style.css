@@ -356,6 +356,18 @@ textarea{
 .social-link li a:hover{
     background-color: rgb(var(--bs-warning-rgb));
 }
+.foot-item li::before{
+    content: "\f105";
+    font-family: fontAwesome;
+    font-size: 14px;
+    color: rgb(var(--bs-warning-rgb));
+    position: absolute;
+    top: 0;
+    left: -20px;
+}
+.foot-item li:hover a{
+    color: rgb(var(--bs-warning-rgb)) !important;
+}
 .bottom-footer{
     background-color: #000;
 }
