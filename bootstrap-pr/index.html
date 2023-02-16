@@ -54,10 +54,9 @@
                 <ul class="navbar-nav">
                     <li class="nav-item"><a href="#" class="nav-link text-light active">Home</a></li>
                     <li class="nav-item"><a href="#about" class="nav-link text-light">About</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link text-light">Menu</a></li>
+                    <li class="nav-item"><a href="#services" class="nav-link text-light">Services</a></li>
                     <li class="nav-item"><a href="#special" class="nav-link text-light">Special</a></li>
                     <li class="nav-item"><a href="#events" class="nav-link text-light">Events</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link text-light">Chefs</a></li>
                     <li class="nav-item"><a href="#gallery" class="nav-link text-light">Gallery</a></li>
                     <li class="nav-item dropdown"><a href="#" class="nav-link text-light dropdown-toggle"
                             id="navbarDropdown" data-bs-toggle="dropdown">Drop Down</a>
@@ -70,6 +69,7 @@
                         </ul>
                     </li>
                     <li class="nav-item"><a href="#contact" class="nav-link text-light">Contact</a></li>
+                    <li class="nav-item"><a href="#faq" class="nav-link text-light">FAQ</a></li>
                 </ul>
             </div>
             <button class="d-none d-lg-block btn btn-outline-warning rounded-pill px-4 text-light">BOOK A TABLE</button>
@@ -129,7 +129,7 @@
     <!-- about end -->
 
     <!-- services start -->
-    <section class="services ptb-100 bg-primary">
+    <section class="services ptb-100 bg-primary" id="services">
         <div class="container">
             <div class="title">
                 <h6 class="subtitle text-uppercase position-relative d-inline-block">Why Us</h6>
@@ -442,9 +442,12 @@
                             <span aria-hidden="true">&laquo;</span>
                         </a>
                     </li>
-                    <li class="page-item"><a class="page-link bg-transparent border-warning text-light" href="#">1</a></li>
-                    <li class="page-item"><a class="page-link bg-transparent border-warning text-light" href="#">2</a></li>
-                    <li class="page-item"><a class="page-link bg-transparent border-warning text-light" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link bg-transparent border-warning text-light" href="#">1</a>
+                    </li>
+                    <li class="page-item"><a class="page-link bg-transparent border-warning text-light" href="#">2</a>
+                    </li>
+                    <li class="page-item"><a class="page-link bg-transparent border-warning text-light" href="#">3</a>
+                    </li>
                     <li class="page-item">
                         <a class="page-link bg-transparent border-warning text-light" href="#" aria-label="Next">
                             <span aria-hidden="true">&raquo;</span>
@@ -491,7 +494,7 @@
             width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
         <div class="container mt-5">
-            <form action="">
+            <form action="#">
                 <div class="row">
                     <div class="col-md-4 col-12">
                         <div class="contact-item d-flex mb-3">
@@ -534,52 +537,75 @@
                     </div>
                     <div class="col-md-8 col-12">
                         <div class="row">
-                            <div class="col-md-6 mb-3">
-                                <div class="form-floating">
-                                    <input type="text" id="name" class="form-control" placeholder="Your Name"
-                                        data-bs-toggle="tooltip" data-bs-placement="left"
-                                        title="Please enter your name">
-                                    <label>Your Name</label>
+                            <form action="#" method="post">
+                                <div class="col-md-6 mb-3">
+                                    <div class="form-floating">
+                                        <input type="text" id="name" class="form-control text-light"
+                                            placeholder="Your Name" data-bs-toggle="tooltip" data-bs-placement="left"
+                                            title="Please enter your name" required>
+                                        <label>Your Name</label>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-md-6 mb-3">
-                                <div class="form-floating">
-                                    <input type="email" id="email" class="form-control" placeholder="Your Email"
-                                        data-bs-toggle="tooltip" data-bs-placement="right"
-                                        title="Please enter your email">
-                                    <label>Your Email</label>
+                                <div class="col-md-6 mb-3">
+                                    <div class="form-floating">
+                                        <input type="email" id="email" class="form-control text-light"
+                                            placeholder="Your Email" data-bs-toggle="tooltip" data-bs-placement="right"
+                                            title="Please enter your email" required>
+                                        <label>Your Email</label>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-12 mb-3">
-                                <div class="form-floating">
-                                    <input type="text" id="subject" class="form-control" placeholder="subject"
-                                        data-bs-toggle="tooltip" data-bs-placement="right"
-                                        title="Please enter your subject">
-                                    <label>Subject</label>
+                                <div class="col-12 mb-3">
+                                    <div class="form-floating">
+                                        <input type="text" id="subject" class="form-control text-light"
+                                            placeholder="subject" data-bs-toggle="tooltip" data-bs-placement="right"
+                                            title="Please enter your subject">
+                                        <label>Subject</label>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-12 mb-3">
-                                <div class="form-floating">
-                                    <textarea name="m" id="message" class="form-control" placeholder="Message"
-                                        data-bs-toggle="tooltip" data-bs-placement="right"
-                                        title="Please enter your message"></textarea>
-                                    <label>Message</label>
+                                <div class="col-12 mb-3">
+                                    <div class="form-floating">
+                                        <textarea name="m" id="message" class="form-control text-light"
+                                            placeholder="Message" data-bs-toggle="tooltip" data-bs-placement="right"
+                                            title="Please enter your message"></textarea>
+                                        <label>Message</label>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="text-center">
-                                <button class="btn border-0 btn-warning text-light rounded-pill px-4 py-2">Send
-                                    Message</button>
-                            </div>
+                                <div class="text-center">
+                                    <button id="form-btn"
+                                        class="btn border-0 btn-warning text-light rounded-pill px-4 py-2">Send
+                                        Message</button>
+                                    <span type="button" class=" btn text-dark" data-bs-toggle="popover"
+                                        data-bs-content="Enter form detials and submit it"><i
+                                            class="fa-solid fa-circle-info"></i></span>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
             </form>
         </div>
     </section>
+    <!-- alert -->
+    <div class="alert col-md-6 col-12 mx-auto alert-success fixed-top">
+        <div class="d-flex justify-content-between">
+            <div class="text-dark">
+                <i class="fa-solid fa-circle-check text-success"></i> Succesfully Submitted
+            </div>
+            <button class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+        <div>
+            <div class="row">
+                <div class="col-md-6 col-12 text-dark" id="pname">Name : </div>
+                <div class="col-md-6 col-12 text-dark" id="pemail">Email : </div>
+                <div class="col-md-6 col-12 text-dark" id="psubject">Subject : </div>
+                <div class="col-md-6 col-12 text-dark" id="pmessage">Message : </div>
+            </div>
+        </div>
+    </div>
     <!-- contact end -->
 
     <!-- faq start -->
-    <section class="faq ptb-60 border-bottom bg-secondary">
+    <section class="faq ptb-60 border-bottom bg-secondary" id="faq">
         <div class="container">
             <div class="title">
                 <h6 class="subtitle text-uppercase position-relative d-inline-block">FAQ</h6>
@@ -741,8 +767,8 @@
             <div class="row">
                 <div class="col-md-6 mb-3">
                     <div class="form-floating">
-                        <input type="text" id="name" class="form-control" placeholder="Your Name"
-                            data-bs-toggle="tooltip" data-bs-placement="left" title="Please enter your name">
+                        <input type="text" class="form-control" placeholder="Your Name" data-bs-toggle="tooltip"
+                            data-bs-placement="left" title="Please enter your name">
                         <label>Your Name</label>
                     </div>
                 </div>
@@ -793,6 +819,11 @@
     <script src="asset/js/jquery.min.js"></script>
     <script src="asset/js/bootstrap.bundle.min.js"></script>
     <script>
+        // popover
+        var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+        var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+            return new bootstrap.Popover(popoverTriggerEl)
+        })
         // slider
         var myCarousel = document.querySelector('#myCarousel')
         var carousel = new bootstrap.Carousel(myCarousel, {
@@ -806,7 +837,6 @@
         });
         // toast
         let gallery = document.querySelector("#gallery");
-        let progress = document.querySelector("#progress");
         let galObserver = new IntersectionObserver(
             (entries, observer) => {
                 let [entry] = entries;
@@ -820,6 +850,8 @@
             root: null,
             threshold: 0.4,
         });
+        // progress
+        let progress = document.querySelector("#progress");
         let progObserver = new IntersectionObserver(
             (entries, observer) => {
                 let [entry] = entries;
@@ -856,6 +888,15 @@
                 $(".modal-body").html("");
                 var a = $(this).html();
                 $(".modal-body").append(a);
+            });
+
+            // form
+            $("#form-btn").click(function () {
+                $(".alert").addClass("alerton");
+                $("#pname").append($("#name").val());
+                $("#pemail").append($("#email").val());
+                $("#psubject").append($("#subject").val());
+                $("#pmessage").append($("#message").val());
             });
         });
     </script>
