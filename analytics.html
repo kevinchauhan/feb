@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="asset/js/jquery-jvectormap.css" />
+
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="asset/fonts/font-awesome/all.min.css">
+    <!-- bootstrap-css -->
+    <link rel="stylesheet" href="asset/css/bootstrap.min.css">
+    <!-- css -->
+    <link rel="stylesheet" href="asset/css/style.css">
+</head>
+
+<body>
+    <main>
+        <!-- map start -->
+        <section>
+            <div class="container-fluid px-5 py-3">
+                <div class="d-flex align-items-center mb-4 justify-content-between">
+                    <h5 class="m-0">Analytics</h5>
+                    <div>
+                        <button class="btn btn-sm bg-white shadow-sm me-1 dropdown-toggle" data-bs-toggle="dropdown"><i
+                                class="fa-regular fa-calendar"></i> Today</button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" class="dropdown-item">Action</a></li>
+                            <li><a href="#" class="dropdown-item">Another Action</a></li>
+                            <li><a href="#" class="dropdown-item">Something else here</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a href="#" class="dropdown-item">Seperated link</a></li>
+                        </ul>
+                        <button class="btn btn-sm btn-primary shadow-sm"><i
+                                class="text-white fa-solid fa-filter"></i></button>
+                        <button class="btn btn-sm btn-primary shadow-sm"><i
+                                class="text-white fa-solid fa-arrows-rotate"></i></button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-5">
+                        <div class="row bg-secondary rounded-3 m-0 mb-4">
+                            <div class="col-8 p-4 pb-0">
+                                <h6 class="text-primary">Welcome back, Chris!</h6>
+                                <p class="text-primary">AppStack Dashboard</p>
+                            </div>
+                            <div class="col-4 d-flex flex-wrap align-content-end"><img
+                                    src="asset/images/searching.9ba2a95a.png" alt="" class="w-100"></div>
+                        </div>
+                        <div class="d-flex bg-white shadow-sm rounded-3 m-0 p-4 mb-4">
+                            <div class="flex-grow-1">
+                                <h6 class="mb-4">Bounce</h6>
+                                <h4 class="mb-4">2.364</h4>
+                                <p class="m-0 text-muted"><small
+                                        class="bg-success-light text-success px-1 me-1 rounded">+3.65%</small> Since
+                                    last week</p>
+                            </div>
+                            <div>
+                                <span class="card-icon rounded-circle text-center d-block"><i
+                                        class="fa-solid fa-dollar-sign text-primary fs-4"></i></span>
+                            </div>
+                        </div>
+                        <div class="d-flex bg-white shadow-sm rounded-3 m-0 p-4 mb-4">
+                            <div class="flex-grow-1">
+                                <h6 class="mb-4">Real-Time</h6>
+                                <h4 class="mb-4">1.856</h4>
+                                <p class="m-0 text-muted"><small
+                                        class="bg-success-light text-success px-1 me-1 rounded">+2.25%</small> Since
+                                    last week</p>
+                            </div>
+                            <div>
+                                <span class="card-icon rounded-circle text-center d-block"><i
+                                        class="fa-solid fa-dollar-sign text-primary fs-4"></i></span>
+                            </div>
+                        </div>
+                        <div class="d-flex bg-white shadow-sm rounded-3 m-0 p-4">
+                            <div class="flex-grow-1">
+                                <h6 class="mb-4">Visitors</h6>
+                                <h4 class="mb-4">17.212</h4>
+                                <p class="m-0 text-muted"><small
+                                        class="bg-danger-light text-danger px-1 me-1 rounded">-1.25%</small> Since
+                                    last week</p>
+                            </div>
+                            <div>
+                                <span class="card-icon rounded-circle text-center d-block"><i
+                                        class="fa-solid fa-dollar-sign text-primary fs-4"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-7">
+                        <h6>Real-Time</h6>
+                        <div class="crypto-chart h-100 pb-4">
+                            <!-- TradingView Widget BEGIN -->
+                            <div class="tradingview-widget-container h-100">
+                                <div id="tradingview_3ab5e" class="h-100"></div>
+                            <!-- TradingView Widget END -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- map end -->
+
+        <!-- radar-chart start -->
+        <section>
+            <div class="container-fluid px-5 py-3">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="bg-white h-100">
+                            <h6 class="p-3">Languages<span class="float-end"><a href="#"><i
+                                            class="text-muted fa-solid fa-ellipsis"></i></a></span></h6>
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Language</th>
+                                        <th class="text-end">Users</th>
+                                        <th class="w-50">% Users</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>en-us</td>
+                                        <td class="text-end">735</td>
+                                        <td>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-primary" style="width: 43%;">43%</div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>en-gb</td>
+                                        <td class="text-end">223</td>
+                                        <td>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-primary" style="width: 27%;">27%</div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>fr-fr</td>
+                                        <td class="text-end">22</td>
+                                        <td>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-primary" style="width: 22%;">22%</div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>es-es</td>
+                                        <td class="text-end">132</td>
+                                        <td>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-primary" style="width: 16%;">16%</div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>de-de</td>
+                                        <td class="text-end">118</td>
+                                        <td>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-primary" style="width: 15%;">15%</div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>ru-ru</td>
+                                        <td class="text-end">98</td>
+                                        <td>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-primary" style="width: 13%;">13%</div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="bg-white shadow-sm p-3 h-100">
+                            <h6 class="mb-5">Mobile / Desktop<span class="float-end"><a href="#"><i
+                                            class="text-muted fa-solid fa-ellipsis"></i></a></span></h6>
+                            <div class="px-1">
+                                <canvas id="myChart" height="250px"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="chart bg-white shadow-sm p-3 h-100">
+                            <h6>Interests<span class="float-end"><a href="#"><i
+                                            class="text-muted fa-solid fa-ellipsis"></i></a></span></h6>
+                            <canvas id="radar" height="200px"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- radar-chart end -->
+
+        <!-- traffic start -->
+        <section>
+            <div class="container-fluid px-5 py-3">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="bg-white h-100 p-3">
+                            <h6>Weekly Sales<span class="float-end"><a href="#"><i
+                                            class="text-muted fa-solid fa-ellipsis"></i></a></span></h6>
+                            <div class="charts overflow-hidden" style="height: 250px;">
+                                <canvas class="mx-auto" id="weekly-chart"></canvas>
+                            </div>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Source</th>
+                                        <th class="text-end">Revenue</th>
+                                        <th class="text-end">Value</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Direct</td>
+                                        <td class="text-end">$ 2602</td>
+                                        <td class="text-end text-success">+43%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Affiliate</td>
+                                        <td class="text-end">$ 1253</td>
+                                        <td class="text-end text-success">+13%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>E-mail</td>
+                                        <td class="text-end">$ 541</td>
+                                        <td class="text-end text-success">+24%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Other</td>
+                                        <td class="text-end">$ 1465</td>
+                                        <td class="text-end text-success">+11%</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col-8">
+                        <div class="bg-white h-100">
+                            <h6 class="p-3">Traffic<span class="float-end"><a href="#"><i
+                                            class="text-muted fa-solid fa-ellipsis"></i></a></span></h6>
+                            <table class="my-0 table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Source</th>
+                                        <th class="text-end">Users</th>
+                                        <th class="d-none d-xl-table-cell text-end">Sessions</th>
+                                        <th class="d-none d-xl-table-cell text-end">Bounce Rate</th>
+                                        <th class="d-none d-xl-table-cell text-end">Avg. Session Duration</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Google</td>
+                                        <td class="text-end">1023</td>
+                                        <td class="d-none d-xl-table-cell text-end">1265</td>
+                                        <td class="d-none d-xl-table-cell text-end text-success">27.23%</td>
+                                        <td class="d-none d-xl-table-cell text-end">00:06:25</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bing</td>
+                                        <td class="text-end">504</td>
+                                        <td class="d-none d-xl-table-cell text-end">623</td>
+                                        <td class="d-none d-xl-table-cell text-end text-danger">66.76%</td>
+                                        <td class="d-none d-xl-table-cell text-end">00:04:42</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Twitter</td>
+                                        <td class="text-end">462</td>
+                                        <td class="d-none d-xl-table-cell text-end">571</td>
+                                        <td class="d-none d-xl-table-cell text-end text-success">31.53%</td>
+                                        <td class="d-none d-xl-table-cell text-end">00:08:05</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pinterest</td>
+                                        <td class="text-end">623</td>
+                                        <td class="d-none d-xl-table-cell text-end">770</td>
+                                        <td class="d-none d-xl-table-cell text-end text-danger">52.81%</td>
+                                        <td class="d-none d-xl-table-cell text-end">00:03:10</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Facebook</td>
+                                        <td class="text-end">812</td>
+                                        <td class="d-none d-xl-table-cell text-end">1003</td>
+                                        <td class="d-none d-xl-table-cell text-end text-success">24.83%</td>
+                                        <td class="d-none d-xl-table-cell text-end">00:05:56</td>
+                                    </tr>
+                                    <tr>
+                                        <td>DuckDuckGo</td>
+                                        <td class="text-end">693</td>
+                                        <td class="d-none d-xl-table-cell text-end">856</td>
+                                        <td class="d-none d-xl-table-cell text-end text-success">37.36%</td>
+                                        <td class="d-none d-xl-table-cell text-end">00:09:12</td>
+                                    </tr>
+                                    <tr>
+                                        <td>GitHub</td>
+                                        <td class="text-end">713</td>
+                                        <td class="d-none d-xl-table-cell text-end">881</td>
+                                        <td class="d-none d-xl-table-cell text-end text-success">38.09%</td>
+                                        <td class="d-none d-xl-table-cell text-end">00:06:19</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Instagram</td>
+                                        <td class="text-end">412</td>
+                                        <td class="d-none d-xl-table-cell text-end">508</td>
+                                        <td class="d-none d-xl-table-cell text-end text-success">17.09%</td>
+                                        <td class="d-none d-xl-table-cell text-end">00:04:23</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Direct</td>
+                                        <td class="text-end">872</td>
+                                        <td class="d-none d-xl-table-cell text-end">1077</td>
+                                        <td class="d-none d-xl-table-cell text-end text-success">32.70%</td>
+                                        <td class="d-none d-xl-table-cell text-end">00:09:18</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- traffic end -->
+    </main>
+
+
+    <!-- <script src="asset/js/jquery.min.js"></script> -->
+    <script src="asset/js/chart.js"></script>
+    <script src="asset/js/my-chart.js"></script>
+    <script src="asset/js/jquery-jvectormap.js"></script>
+    <script src="asset/js/"></script>
+
+    <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+    <script type="text/javascript">
+        new TradingView.widget(
+            {
+                "autosize": true,
+                "symbol": "BITSTAMP:BTCUSD",
+                "interval": "D",
+                "timezone": "Etc/UTC",
+                "theme": "light",
+                "style": "1",
+                "locale": "in",
+                "toolbar_bg": "#f1f3f6",
+                "enable_publishing": false,
+                "allow_symbol_change": true,
+                "container_id": "tradingview_3ab5e"
+            }
+        );
+    </script>
+</body>
+
+</html>
