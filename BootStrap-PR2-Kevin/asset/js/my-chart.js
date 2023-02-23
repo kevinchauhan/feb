@@ -86,7 +86,7 @@ new Chart(week, {
 });
 // doughnut end
 
-// doughnut start
+// radar start
 const radar = document.getElementById('radar');
 
 new Chart(radar, {
@@ -116,4 +116,4 @@ new Chart(radar, {
     }
   }
 });
-// doughnut end
+// radar end

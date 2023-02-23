@@ -1621,7 +1621,7 @@ progress {
   --bs-table-bg: transparent;
   --bs-table-accent-bg: transparent;
   --bs-table-striped-color: #212529;
-  --bs-table-striped-bg: rgb(244,247,249);
+  --bs-table-striped-bg: rgb(244, 247, 249);
   --bs-table-active-color: #212529;
   --bs-table-active-bg: rgba(0, 0, 0, 0.1);
   --bs-table-hover-color: #212529;
@@ -7419,6 +7419,11 @@ fieldset:disabled .btn {
   }
 }
 @media (min-width: 768px) {
+  /* user */
+  .border-md-end {
+    border-right: 1px solid #dee2e6 !important;
+  }
+  /* user */
   .float-md-start {
     float: left !important;
   }
