@@ -5,10 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-    <link rel="stylesheet" href="asset/js/jquery-jvectormap.css" />
-
+    <!-- title -->
+    <title>Analytics Dashboard | Kevin</title>
+    <!-- favicon -->
+    <link rel="icon" href="asset/images/favicon.svg">
+    <!-- google-fonts -->
+    <link rel="stylesheet" href="asset/css/google-fonts.css">
     <!-- font-awesome -->
     <link rel="stylesheet" href="asset/fonts/font-awesome/all.min.css">
     <!-- bootstrap-css -->
@@ -18,340 +20,480 @@
 </head>
 
 <body>
-    <main>
-        <!-- candle-stick start -->
-        <section>
-            <div class="container-fluid px-5 py-3">
-                <div class="d-flex align-items-center mb-4 justify-content-between">
-                    <h5 class="m-0">Analytics</h5>
-                    <div>
-                        <button class="btn btn-sm bg-white shadow-sm me-1 dropdown-toggle" data-bs-toggle="dropdown"><i
-                                class="fa-regular fa-calendar"></i> Today</button>
-                        <ul class="dropdown-menu">
-                            <li><a href="#" class="dropdown-item">Action</a></li>
-                            <li><a href="#" class="dropdown-item">Another Action</a></li>
-                            <li><a href="#" class="dropdown-item">Something else here</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a href="#" class="dropdown-item">Seperated link</a></li>
-                        </ul>
-                        <button class="btn btn-sm btn-primary shadow-sm"><i
-                                class="text-white fa-solid fa-filter"></i></button>
-                        <button class="btn btn-sm btn-primary shadow-sm"><i
-                                class="text-white fa-solid fa-arrows-rotate"></i></button>
-                    </div>
+    <!-- wrapper start -->
+    <div class="d-flex w-100">
+        <!-- sidebar start -->
+        <aside class="bg-dark sidebar overflow-auto" id="sidebar">
+            <div class="px-2">
+                <!-- logo -->
+                <a href="#" class="pt-3 d-block text-center text-white fs-5">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        width="25px" height="25px" viewBox="0 0 20 20" enable-background="new 0 0 20 20"
+                        xml:space="preserve" fill="#2871e7">
+                        <path fill="#84aef2"
+                            d="M19.4,4.1l-9-4C10.1,0,9.9,0,9.6,0.1l-9,4C0.2,4.2,0,4.6,0,5s0.2,0.8,0.6,0.9l9,4C9.7,10,9.9,10,10,10s0.3,0,0.4-0.1l9-4     C19.8,5.8,20,5.4,20,5S19.8,4.2,19.4,4.1z">
+                        </path>
+                        <path
+                            d="M10,15c-0.1,0-0.3,0-0.4-0.1l-9-4c-0.5-0.2-0.7-0.8-0.5-1.3c0.2-0.5,0.8-0.7,1.3-0.5l8.6,3.8l8.6-3.8c0.5-0.2,1.1,0,1.3,0.5     c0.2,0.5,0,1.1-0.5,1.3l-9,4C10.3,15,10.1,15,10,15z">
+                        </path>
+                        <path
+                            d="M10,20c-0.1,0-0.3,0-0.4-0.1l-9-4c-0.5-0.2-0.7-0.8-0.5-1.3c0.2-0.5,0.8-0.7,1.3-0.5l8.6,3.8l8.6-3.8c0.5-0.2,1.1,0,1.3,0.5     c0.2,0.5,0,1.1-0.5,1.3l-9,4C10.3,20,10.1,20,10,20z">
+                        </path>
+                    </svg>
+                    AppStack
+                </a>
+                <!-- logo -->
+
+                <p class="text-white mt-5 ps-2">Pages</p>
+                <div class="ps-2 my-4">
+                    <a class="d-block" href="#dash" data-bs-toggle="collapse"><span class="me-2 align-middle"><i
+                                class="fa-solid fa-sliders fs-6"></i></span> Dashboards</a>
+                    <ul id="dash" class="collapse p-0 ps-4">
+                        <li><a class="p-2 d-block" href="index.html">Default</a></li>
+                        <li><a class="p-2 d-block" href="analytics.html">Analytics</a></li>
+                        <li><a class="nav-link p-2 d-block disabled" href="#">Saas</a></li>
+                        <li><a class="nav-link p-2 d-block disabled" href="#">Social</a></li>
+                        <li><a class="nav-link p-2 d-block disabled" href="#">Crypto</a></li>
+                    </ul>
                 </div>
-                <div class="row">
-                    <div class="col-lg-5 col-12 mb-3 mb-lg-0">
+                <div class="ps-2 my-4">
+                    <a class="d-block" href="#pages" data-bs-toggle="collapse"><span class="me-2 align-middle"><i
+                                class="fa-solid fa-table-list fs-6"></i></span> Pages</a>
+                    <ul id="pages" class="collapse p-0 ps-4">
+                        <li><a class="nav-link disabled p-2 d-block" href="#">Profile</a></li>
+                        <li><a class="p-2 d-block" href="settings.html">Settings</a></li>
+                        <li><a class="nav-link disabled p-2 d-block" href="#">Clients</a></li>
+                        <li><a class="nav-link disabled p-2 d-block" href="#">Projects</a></li>
+                        <li><a class="nav-link disabled p-2 d-block" href="#">Invoice</a></li>
+                        <li><a class="nav-link disabled p-2 d-block" href="#">Pricing</a></li>
+                        <li><a class="p-2 d-block" href="task.html">Tasks</a></li>
+                        <li><a class="p-2 d-block" href="chat.html">Chat</a></li>
+                        <li><a class="nav-link disabled p-2 d-block" href="#">Blank Page</a></li>
+                    </ul>
+                </div>
+                <div class="ps-2 my-4">
+                    <a class="d-block" href="#auth" data-bs-toggle="collapse"><span class="me-2 align-middle"><i
+                                class="fa-solid fa-user-group fs-6"></i></span> Auth</a>
+                    <ul id="auth" class="collapse p-0 ps-4">
+                        <li><a class="nav-link disabled p-2 d-block" href="#">Sign In</a></li>
+                        <li><a class="nav-link disabled p-2 d-block" href="#">Sign Up</a></li>
+                        <li><a class="nav-link disabled p-2 d-block" href="#">Reset Password</a></li>
+                        <li><a class="nav-link disabled p-2 d-block" href="#">404 Page</a></li>
+                        <li><a class="nav-link disabled p-2 d-block" href="#">500 Page</a></li>
+                    </ul>
+                </div>
+                <div class="ps-2 my-4">
+                    <a class="nav-link disabled p-0 d-block" href="#"><span class="me-2 align-middle"><i
+                                class="fa-solid fa-book-open fs-6"></i></span> Documentation</a>
+                </div>
+            </div>
+        </aside>
+        <!-- sidebar end -->
+
+        <!-- main content start -->
+        <main class="w-100">
+            <!-- navbar start -->
+            <nav class="navbar navbar-light shadow-sm w-100 py-3 px-2 sticky-top bg-white">
+                <div class="d-flex justify-content-between align-items-center">
+                    <button class="btn" onclick="toggle()"><i class="fs-4 fa-solid fa-bars-staggered"></i></button>
+                    <form action="" class="d-sm-flex d-none">
+                        <input type="search" name="" id="" class="form-control rounded-0"
+                            placeholder="Search projects...">
+                        <button class="search-btn btn rounded-0"><i
+                                class="fa-solid fa-magnifying-glass fs-5"></i></button>
+                    </form>
+                </div>
+                <div>
+                    <ul class="d-flex gap-3 align-items-center m-0 p-0">
+                        <li class="dropdown position-relative head-icon"><a href="#"><i
+                                    class="fa-regular fa-comment fs-5"></i><span
+                                    class="comment d-block position-absolute top-0 start-100 translate-middle bg-primary rounded-circle text-white text-center">4</span>
+                            </a></li>
+                        <li><a href="#"><i class="fa-regular fa-bell-slash fs-5"></i></a></li>
+                        <li><a href="#"><img src="asset/images/eng.png" class="rounded-circle" alt="" width="20px"
+                                    height="20px"></a></li>
+                        <li class="dropdown nav-img">
+                            <a href="#" class="dropdown-toggle text-dark d-sm-none" data-bs-toggle="dropdown"><i
+                                    class="fa-solid fa-gear"></i></a>
+                            <a href="#" class="dropdown-toggle text-dark d-none d-sm-block" data-bs-toggle="dropdown">
+                                <img src="asset/images/daily-feed/2.jpg" alt="" class="rounded-circle" width="40px"
+                                    height="40px"> Chris Wood</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#" class="dropdown-item">Profile</a></li>
+                                <li><a href="#" class="dropdown-item">Analytics</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a href="#" class="dropdown-item">Settings & Privacy</a></li>
+                                <li><a href="#" class="dropdown-item">Help</a></li>
+                                <li><a href="#" class="dropdown-item">Sign out</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- navbar end -->
+            <div class="content">
+                <!-- candle-stick start -->
+                <section>
+                    <div class="container-fluid p-5 pb-3">
+                        <div class="d-sm-flex align-items-center mb-4 justify-content-between">
+                            <h5 class="mb-sm-0">Analytics</h5>
+                            <div class="text-start">
+                                <button class="btn btn-sm bg-white shadow-sm me-1 dropdown-toggle"
+                                    data-bs-toggle="dropdown"><i class="fa-regular fa-calendar"></i> Today</button>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" class="dropdown-item">Action</a></li>
+                                    <li><a href="#" class="dropdown-item">Another Action</a></li>
+                                    <li><a href="#" class="dropdown-item">Something else here</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a href="#" class="dropdown-item">Seperated link</a></li>
+                                </ul>
+                                <button class="btn btn-sm btn-primary shadow-sm"><i
+                                        class="text-white fa-solid fa-filter"></i></button>
+                                <button class="btn btn-sm btn-primary shadow-sm"><i
+                                        class="text-white fa-solid fa-arrows-rotate"></i></button>
+                            </div>
+                        </div>
                         <div class="row">
-                            <div class="col-12 col-sm-6 col-lg-12 mb-4">
-                                <div class="row bg-secondary rounded-3 m-0 h-100">
-                                    <div class="col-8 p-4 pb-0">
-                                        <h6 class="text-primary">Welcome back, Chris!</h6>
-                                        <p class="text-primary">AppStack Dashboard</p>
+                            <div class="col-lg-5 col-12 mb-3 mb-lg-0">
+                                <div class="row">
+                                    <div class="col-12 col-sm-6 col-lg-12 mb-4">
+                                        <div class="row bg-secondary rounded-3 m-0 h-100">
+                                            <div class="col-8 p-4 pb-0">
+                                                <h6 class="text-primary">Welcome back, Chris!</h6>
+                                                <p class="text-primary">AppStack Dashboard</p>
+                                            </div>
+                                            <div class="col-4 d-flex flex-wrap align-content-end"><img
+                                                    src="asset/images/searching.9ba2a95a.png" alt="" class="w-100">
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="col-4 d-flex flex-wrap align-content-end"><img
-                                            src="asset/images/searching.9ba2a95a.png" alt="" class="w-100"></div>
+                                    <div class="col-12 col-sm-6 col-lg-12 mb-4">
+                                        <div class="d-flex bg-white shadow-sm rounded-3 m-0 p-4">
+                                            <div class="flex-grow-1">
+                                                <h6 class="mb-4">Bounce</h6>
+                                                <h4 class="mb-4">2.364</h4>
+                                                <p class="m-0 text-muted"><small
+                                                        class="bg-success-light text-success px-1 me-1 rounded">+3.65%</small>
+                                                    Since
+                                                    last week</p>
+                                            </div>
+                                            <div>
+                                                <span class="card-icon rounded-circle text-center d-block"><i
+                                                        class="fa-solid fa-dollar-sign text-primary fs-4"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-lg-12 mb-4">
+                                        <div class="d-flex bg-white shadow-sm rounded-3 m-0 p-4">
+                                            <div class="flex-grow-1">
+                                                <h6 class="mb-4">Real-Time</h6>
+                                                <h4 class="mb-4">1.856</h4>
+                                                <p class="m-0 text-muted"><small
+                                                        class="bg-success-light text-success px-1 me-1 rounded">+2.25%</small>
+                                                    Since
+                                                    last week</p>
+                                            </div>
+                                            <div>
+                                                <span class="card-icon rounded-circle text-center d-block"><i
+                                                        class="fa-solid fa-dollar-sign text-primary fs-4"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-lg-12">
+                                        <div class="d-flex bg-white shadow-sm rounded-3 m-0 p-4">
+                                            <div class="flex-grow-1">
+                                                <h6 class="mb-4">Visitors</h6>
+                                                <h4 class="mb-4">17.212</h4>
+                                                <p class="m-0 text-muted"><small
+                                                        class="bg-danger-light text-danger px-1 me-1 rounded">-1.25%</small>
+                                                    Since
+                                                    last week</p>
+                                            </div>
+                                            <div>
+                                                <span class="card-icon rounded-circle text-center d-block"><i
+                                                        class="fa-solid fa-dollar-sign text-primary fs-4"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-sm-6 col-lg-12 mb-4">
-                                <div class="d-flex bg-white shadow-sm rounded-3 m-0 p-4">
-                                    <div class="flex-grow-1">
-                                        <h6 class="mb-4">Bounce</h6>
-                                        <h4 class="mb-4">2.364</h4>
-                                        <p class="m-0 text-muted"><small
-                                                class="bg-success-light text-success px-1 me-1 rounded">+3.65%</small>
-                                            Since
-                                            last week</p>
-                                    </div>
-                                    <div>
-                                        <span class="card-icon rounded-circle text-center d-block"><i
-                                                class="fa-solid fa-dollar-sign text-primary fs-4"></i></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-sm-6 col-lg-12 mb-4">
-                                <div class="d-flex bg-white shadow-sm rounded-3 m-0 p-4">
-                                    <div class="flex-grow-1">
-                                        <h6 class="mb-4">Real-Time</h6>
-                                        <h4 class="mb-4">1.856</h4>
-                                        <p class="m-0 text-muted"><small
-                                                class="bg-success-light text-success px-1 me-1 rounded">+2.25%</small>
-                                            Since
-                                            last week</p>
-                                    </div>
-                                    <div>
-                                        <span class="card-icon rounded-circle text-center d-block"><i
-                                                class="fa-solid fa-dollar-sign text-primary fs-4"></i></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-sm-6 col-lg-12">
-                                <div class="d-flex bg-white shadow-sm rounded-3 m-0 p-4">
-                                    <div class="flex-grow-1">
-                                        <h6 class="mb-4">Visitors</h6>
-                                        <h4 class="mb-4">17.212</h4>
-                                        <p class="m-0 text-muted"><small
-                                                class="bg-danger-light text-danger px-1 me-1 rounded">-1.25%</small>
-                                            Since
-                                            last week</p>
-                                    </div>
-                                    <div>
-                                        <span class="card-icon rounded-circle text-center d-block"><i
-                                                class="fa-solid fa-dollar-sign text-primary fs-4"></i></span>
-                                    </div>
+                            <div class="col-lg-7 col-12">
+                                <h6>Real-Time</h6>
+                                <div class="tradingview-widget-container h-100">
+                                    <div id="tradingview_8a933" class="h-100 pb-4"></div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-7 col-12">
-                        <h6>Real-Time</h6>
-                        <div class="tradingview-widget-container h-100">
-                            <div id="tradingview_8a933" class="h-100 pb-4"></div>
-                        </div>
-                    </div>
-        </section>
-        <!-- candle-stick end -->
+                </section>
+                <!-- candle-stick end -->
 
-        <!-- radar-chart start -->
-        <section>
-            <div class="container-fluid px-5 py-3">
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 col-12 mb-3 mb-lg-0">
-                        <div class="bg-white h-100">
-                            <h6 class="p-3">Languages<span class="float-end"><a href="#"><i
-                                            class="text-muted fa-solid fa-ellipsis"></i></a></span></h6>
-                            <table class="table table-striped analytics-table-1">
-                                <thead>
-                                    <tr>
-                                        <th>Language</th>
-                                        <th class="text-end">Users</th>
-                                        <th class="w-50">% Users</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>en-us</td>
-                                        <td class="text-end">735</td>
-                                        <td>
-                                            <div class="progress">
-                                                <div class="progress-bar bg-primary" style="width: 43%;">43%</div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>en-gb</td>
-                                        <td class="text-end">223</td>
-                                        <td>
-                                            <div class="progress">
-                                                <div class="progress-bar bg-primary" style="width: 27%;">27%</div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>fr-fr</td>
-                                        <td class="text-end">22</td>
-                                        <td>
-                                            <div class="progress">
-                                                <div class="progress-bar bg-primary" style="width: 22%;">22%</div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>es-es</td>
-                                        <td class="text-end">132</td>
-                                        <td>
-                                            <div class="progress">
-                                                <div class="progress-bar bg-primary" style="width: 16%;">16%</div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>de-de</td>
-                                        <td class="text-end">118</td>
-                                        <td>
-                                            <div class="progress">
-                                                <div class="progress-bar bg-primary" style="width: 15%;">15%</div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>ru-ru</td>
-                                        <td class="text-end">98</td>
-                                        <td>
-                                            <div class="progress">
-                                                <div class="progress-bar bg-primary" style="width: 13%;">13%</div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-12 mb-3 mb-lg-0">
-                        <div class="bg-white shadow-sm p-3 h-100">
-                            <h6 class="mb-5">Mobile / Desktop<span class="float-end"><a href="#"><i
-                                            class="text-muted fa-solid fa-ellipsis"></i></a></span></h6>
-                            <div class="px-1">
-                                <canvas id="myChart" height="250px"></canvas>
+                <!-- radar-chart start -->
+                <section>
+                    <div class="container-fluid px-5 py-3">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6 col-12 mb-3 mb-lg-0">
+                                <div class="bg-white shadow-sm h-100">
+                                    <h6 class="p-3">Languages<span class="float-end"><a href="#"><i
+                                                    class="text-muted fa-solid fa-ellipsis"></i></a></span></h6>
+                                    <table class="table table-striped analytics-table-1">
+                                        <thead>
+                                            <tr>
+                                                <th>Language</th>
+                                                <th class="text-end">Users</th>
+                                                <th class="w-75">% Users</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>en-us</td>
+                                                <td class="text-end">735</td>
+                                                <td>
+                                                    <div class="progress">
+                                                        <div class="progress-bar bg-primary" style="width: 43%;">43%
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>en-gb</td>
+                                                <td class="text-end">223</td>
+                                                <td>
+                                                    <div class="progress">
+                                                        <div class="progress-bar bg-primary" style="width: 27%;">27%
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>fr-fr</td>
+                                                <td class="text-end">22</td>
+                                                <td>
+                                                    <div class="progress">
+                                                        <div class="progress-bar bg-primary" style="width: 22%;">22%
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>es-es</td>
+                                                <td class="text-end">132</td>
+                                                <td>
+                                                    <div class="progress">
+                                                        <div class="progress-bar bg-primary" style="width: 16%;">16%
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>de-de</td>
+                                                <td class="text-end">118</td>
+                                                <td>
+                                                    <div class="progress">
+                                                        <div class="progress-bar bg-primary" style="width: 15%;">15%
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>ru-ru</td>
+                                                <td class="text-end">98</td>
+                                                <td>
+                                                    <div class="progress">
+                                                        <div class="progress-bar bg-primary" style="width: 13%;">13%
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-12 mb-3 mb-lg-0">
+                                <div class="bg-white shadow-sm p-3 h-100">
+                                    <h6 class="mb-5">Mobile / Desktop<span class="float-end"><a href="#"><i
+                                                    class="text-muted fa-solid fa-ellipsis"></i></a></span></h6>
+                                    <div class="px-1">
+                                        <canvas id="myChart" height="250px"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-12">
+                                <div class="chart bg-white shadow-sm p-3 h-100">
+                                    <h6>Interests<span class="float-end"><a href="#"><i
+                                                    class="text-muted fa-solid fa-ellipsis"></i></a></span></h6>
+                                    <canvas id="radar"></canvas>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-12">
-                        <div class="chart bg-white shadow-sm p-3 h-100">
-                            <h6>Interests<span class="float-end"><a href="#"><i
-                                            class="text-muted fa-solid fa-ellipsis"></i></a></span></h6>
-                            <canvas id="radar"></canvas>
+                </section>
+                <!-- radar-chart end -->
+
+                <!-- traffic start -->
+                <section>
+                    <div class="container-fluid p-5 pt-3">
+                        <div class="row">
+                            <div class="col-lg-4 col-12 mb-3 mb-lg-0">
+                                <div class="bg-white shadow-sm h-100 p-3">
+                                    <h6>Weekly Sales<span class="float-end"><a href="#"><i
+                                                    class="text-muted fa-solid fa-ellipsis"></i></a></span></h6>
+                                    <div class="charts overflow-hidden" style="height: 200px;">
+                                        <canvas class="mx-auto" id="weekly-chart"></canvas>
+                                    </div>
+                                    <div class="table-responsive">
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Source</th>
+                                                    <th class="text-end">Revenue</th>
+                                                    <th class="text-end">Value</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="text-nowrap"><span class="table-badge d-inline-block rounded align-middle me-1 bg-primary"></span> Direct</td>
+                                                    <td class="text-end">$ 2602</td>
+                                                    <td class="text-end text-success">+43%</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-nowrap"><span class="table-badge d-inline-block rounded align-middle me-1 bg-warning"></span> Affiliate</td>
+                                                    <td class="text-end">$ 1253</td>
+                                                    <td class="text-end text-success">+13%</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-nowrap"><span class="table-badge d-inline-block rounded align-middle me-1 bg-danger"></span> E-mail</td>
+                                                    <td class="text-end">$ 541</td>
+                                                    <td class="text-end text-success">+24%</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-nowrap"><span class="table-badge d-inline-block rounded align-middle me-1 bg-dark"></span> Other</td>
+                                                    <td class="text-end">$ 1465</td>
+                                                    <td class="text-end text-success">+11%</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-8 col-12">
+                                <div class="bg-white shadow-sm h-100">
+                                    <h6 class="p-3">Traffic<span class="float-end"><a href="#"><i
+                                                    class="text-muted fa-solid fa-ellipsis"></i></a></span></h6>
+                                    <table class="my-0 table table-striped analytics-table">
+                                        <thead>
+                                            <tr>
+                                                <th>Source</th>
+                                                <th class="text-end">Users</th>
+                                                <th class="d-none d-xl-table-cell text-end">Sessions</th>
+                                                <th class="d-none d-xl-table-cell text-end">Bounce Rate</th>
+                                                <th class="d-none d-xl-table-cell text-end">Avg. Session Duration</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Google</td>
+                                                <td class="text-end">1023</td>
+                                                <td class="d-none d-xl-table-cell text-end">1265</td>
+                                                <td class="d-none d-xl-table-cell text-end text-success">27.23%</td>
+                                                <td class="d-none d-xl-table-cell text-end">00:06:25</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Bing</td>
+                                                <td class="text-end">504</td>
+                                                <td class="d-none d-xl-table-cell text-end">623</td>
+                                                <td class="d-none d-xl-table-cell text-end text-danger">66.76%</td>
+                                                <td class="d-none d-xl-table-cell text-end">00:04:42</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Twitter</td>
+                                                <td class="text-end">462</td>
+                                                <td class="d-none d-xl-table-cell text-end">571</td>
+                                                <td class="d-none d-xl-table-cell text-end text-success">31.53%</td>
+                                                <td class="d-none d-xl-table-cell text-end">00:08:05</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Pinterest</td>
+                                                <td class="text-end">623</td>
+                                                <td class="d-none d-xl-table-cell text-end">770</td>
+                                                <td class="d-none d-xl-table-cell text-end text-danger">52.81%</td>
+                                                <td class="d-none d-xl-table-cell text-end">00:03:10</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Facebook</td>
+                                                <td class="text-end">812</td>
+                                                <td class="d-none d-xl-table-cell text-end">1003</td>
+                                                <td class="d-none d-xl-table-cell text-end text-success">24.83%</td>
+                                                <td class="d-none d-xl-table-cell text-end">00:05:56</td>
+                                            </tr>
+                                            <tr>
+                                                <td>DuckDuckGo</td>
+                                                <td class="text-end">693</td>
+                                                <td class="d-none d-xl-table-cell text-end">856</td>
+                                                <td class="d-none d-xl-table-cell text-end text-success">37.36%</td>
+                                                <td class="d-none d-xl-table-cell text-end">00:09:12</td>
+                                            </tr>
+                                            <tr>
+                                                <td>GitHub</td>
+                                                <td class="text-end">713</td>
+                                                <td class="d-none d-xl-table-cell text-end">881</td>
+                                                <td class="d-none d-xl-table-cell text-end text-success">38.09%</td>
+                                                <td class="d-none d-xl-table-cell text-end">00:06:19</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Instagram</td>
+                                                <td class="text-end">412</td>
+                                                <td class="d-none d-xl-table-cell text-end">508</td>
+                                                <td class="d-none d-xl-table-cell text-end text-success">17.09%</td>
+                                                <td class="d-none d-xl-table-cell text-end">00:04:23</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Direct</td>
+                                                <td class="text-end">872</td>
+                                                <td class="d-none d-xl-table-cell text-end">1077</td>
+                                                <td class="d-none d-xl-table-cell text-end text-success">32.70%</td>
+                                                <td class="d-none d-xl-table-cell text-end">00:09:18</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </section>
+                <!-- traffic end -->
+
+                <!-- footer start -->
+                <footer class="px-5 py-3 border-top">
+                    <ul class="d-sm-flex text-center text-sm-start align-items-center mb-0 gap-2 p-0">
+                        <li><a href="#" class="text-muted">Support</a></li>
+                        <li><a href="#" class="text-muted">Help Center</a></li>
+                        <li><a href="#" class="text-muted">Privacy</a></li>
+                        <li><a href="#" class="text-muted">Terms of Service</a></li>
+                        <li class="ms-auto text-muted">© 2023 - AppStack</li>
+                    </ul>
+                </footer>
+                <!-- footer end -->
             </div>
-        </section>
-        <!-- radar-chart end -->
+        </main>
+        <!-- main content end -->
+    </div>
+    <!-- wrapper end -->
 
-        <!-- traffic start -->
-        <section>
-            <div class="container-fluid px-5 py-3">
-                <div class="row">
-                    <div class="col-lg-4 col-12 mb-3 mb-lg-0">
-                        <div class="bg-white h-100 p-3">
-                            <h6>Weekly Sales<span class="float-end"><a href="#"><i
-                                            class="text-muted fa-solid fa-ellipsis"></i></a></span></h6>
-                            <div class="charts overflow-hidden" style="height: 200px;">
-                                <canvas class="mx-auto" id="weekly-chart"></canvas>
-                            </div>
-                            <div class="table-responsive">
-                                <table class="table">
-                                    <thead>
-                                        <tr>
-                                            <th>Source</th>
-                                            <th class="text-end">Revenue</th>
-                                            <th class="text-end">Value</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>Direct</td>
-                                            <td class="text-end">$ 2602</td>
-                                            <td class="text-end text-success">+43%</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Affiliate</td>
-                                            <td class="text-end">$ 1253</td>
-                                            <td class="text-end text-success">+13%</td>
-                                        </tr>
-                                        <tr>
-                                            <td>E-mail</td>
-                                            <td class="text-end">$ 541</td>
-                                            <td class="text-end text-success">+24%</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Other</td>
-                                            <td class="text-end">$ 1465</td>
-                                            <td class="text-end text-success">+11%</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-8 col-12">
-                        <div class="bg-white h-100">
-                            <h6 class="p-3">Traffic<span class="float-end"><a href="#"><i
-                                            class="text-muted fa-solid fa-ellipsis"></i></a></span></h6>
-                            <table class="my-0 table table-striped analytics-table">
-                                <thead>
-                                    <tr>
-                                        <th>Source</th>
-                                        <th class="text-end">Users</th>
-                                        <th class="d-none d-xl-table-cell text-end">Sessions</th>
-                                        <th class="d-none d-xl-table-cell text-end">Bounce Rate</th>
-                                        <th class="d-none d-xl-table-cell text-end">Avg. Session Duration</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Google</td>
-                                        <td class="text-end">1023</td>
-                                        <td class="d-none d-xl-table-cell text-end">1265</td>
-                                        <td class="d-none d-xl-table-cell text-end text-success">27.23%</td>
-                                        <td class="d-none d-xl-table-cell text-end">00:06:25</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Bing</td>
-                                        <td class="text-end">504</td>
-                                        <td class="d-none d-xl-table-cell text-end">623</td>
-                                        <td class="d-none d-xl-table-cell text-end text-danger">66.76%</td>
-                                        <td class="d-none d-xl-table-cell text-end">00:04:42</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Twitter</td>
-                                        <td class="text-end">462</td>
-                                        <td class="d-none d-xl-table-cell text-end">571</td>
-                                        <td class="d-none d-xl-table-cell text-end text-success">31.53%</td>
-                                        <td class="d-none d-xl-table-cell text-end">00:08:05</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Pinterest</td>
-                                        <td class="text-end">623</td>
-                                        <td class="d-none d-xl-table-cell text-end">770</td>
-                                        <td class="d-none d-xl-table-cell text-end text-danger">52.81%</td>
-                                        <td class="d-none d-xl-table-cell text-end">00:03:10</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Facebook</td>
-                                        <td class="text-end">812</td>
-                                        <td class="d-none d-xl-table-cell text-end">1003</td>
-                                        <td class="d-none d-xl-table-cell text-end text-success">24.83%</td>
-                                        <td class="d-none d-xl-table-cell text-end">00:05:56</td>
-                                    </tr>
-                                    <tr>
-                                        <td>DuckDuckGo</td>
-                                        <td class="text-end">693</td>
-                                        <td class="d-none d-xl-table-cell text-end">856</td>
-                                        <td class="d-none d-xl-table-cell text-end text-success">37.36%</td>
-                                        <td class="d-none d-xl-table-cell text-end">00:09:12</td>
-                                    </tr>
-                                    <tr>
-                                        <td>GitHub</td>
-                                        <td class="text-end">713</td>
-                                        <td class="d-none d-xl-table-cell text-end">881</td>
-                                        <td class="d-none d-xl-table-cell text-end text-success">38.09%</td>
-                                        <td class="d-none d-xl-table-cell text-end">00:06:19</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Instagram</td>
-                                        <td class="text-end">412</td>
-                                        <td class="d-none d-xl-table-cell text-end">508</td>
-                                        <td class="d-none d-xl-table-cell text-end text-success">17.09%</td>
-                                        <td class="d-none d-xl-table-cell text-end">00:04:23</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Direct</td>
-                                        <td class="text-end">872</td>
-                                        <td class="d-none d-xl-table-cell text-end">1077</td>
-                                        <td class="d-none d-xl-table-cell text-end text-success">32.70%</td>
-                                        <td class="d-none d-xl-table-cell text-end">00:09:18</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- traffic end -->
-    </main>
-
-
-    <!-- <script src="asset/js/jquery.min.js"></script> -->
+    <script src="asset/js/bootstrap.bundle.min.js"></script>
     <script src="asset/js/chart.js"></script>
     <script src="asset/js/my-chart.js"></script>
-    <script src="asset/js/jquery-jvectormap.js"></script>
-    <script src="asset/js/"></script>
-
-    <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+    <script type="text/javascript" src="asset/js/tv.js"></script>
+    <script>
+        function toggle() {
+            var element = document.getElementById("sidebar");
+            element.classList.toggle("active");
+        }
+    </script>
     <script type="text/javascript">
         new TradingView.widget(
             {

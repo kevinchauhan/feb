@@ -9,12 +9,12 @@ new Chart(ctx, {
       label: 'Last year',
       data: [54,67,41,55,62,45,55,73,60,76,48,79],
       backgroundColor: 'rgb(63,128,234)',
-      maxBarThickness: 6,
+      maxBarThickness: 8,
       // borderWidth: 1
     }, {
       label: 'This year',
       data: [69,66,24,48,52,51,44,53,62,79,51,68],
-      maxBarThickness: 6,
+      maxBarThickness: 8,
       backgroundColor: 'rgb(63,128,234,0.6)',
       borderRadius: '5',
       // borderWidth: 1
@@ -26,7 +26,7 @@ new Chart(ctx, {
         display:false,
       }
     },
-    // responsive:true,
+    responsive:true,
     scales: {
       x: {
         stacked: true,
